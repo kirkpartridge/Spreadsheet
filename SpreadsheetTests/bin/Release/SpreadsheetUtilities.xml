@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpreadsheetUtilities</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:SpreadsheetUtilities.DependencyGraph" -->
+        <member name="M:SpreadsheetUtilities.DependencyGraph.#ctor">
+            <summary>
+            Creates an empty DependencyGraph.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.checkKey(System.String)">
+            <summary>
+            Quick method that checks if the dictionary contains the key already.  If so,
+            Returns the number of dependees.  Else it returns 0.
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.HasDependents(System.String)">
+            <summary>
+            Reports whether dependents(s) is non-empty.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.HasDependees(System.String)">
+            <summary>
+            Reports whether dependees(s) is non-empty.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.GetDependents(System.String)">
+            <summary>
+            Enumerates dependents(s).
+            </summary>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.GetDependees(System.String)">
+            <summary>
+            Enumerates dependees(s).
+            </summary>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.AddDependency(System.String,System.String)">
+            <summary>
+            Adds the ordered pair (s,t), if it doesn't exist
+            </summary>
+            <param name="s"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.RemoveDependency(System.String,System.String)">
+            <summary>
+            Removes the ordered pair (s,t), if it exists
+            </summary>
+            <param name="s"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.ReplaceDependents(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Removes all existing ordered pairs of the form (s,r).  Then, for each
+            t in newDependents, adds the ordered pair (s,t).
+            </summary>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.ReplaceDependees(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Removes all existing ordered pairs of the form (r,s).  Then, for each 
+            t in newDependees, adds the ordered pair (t,s).
+            </summary>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.removeLeftOverdepndees(System.String)">
+            <summary>
+            Method used when removing all Dependents of a node.
+            Cycles through to be removed dependents to remove the correct
+            dependee.
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.removeLeftOverDependents(System.String)">
+            <summary>
+            Used to cycle through the to be removed dependees and update
+            the necessary dependants
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="P:SpreadsheetUtilities.DependencyGraph.Size">
+            <summary>
+            The number of ordered pairs in the DependencyGraph.
+            </summary>
+        </member>
+        <member name="P:SpreadsheetUtilities.DependencyGraph.Item(System.String)">
+            <summary>
+            The size of dependees(s).
+            This property is an example of an indexer.  If dg is a DependencyGraph, you would
+            invoke it like this:
+            dg["a"]
+            It should return the size of dependees("a")
+            </summary>
+        </member>
+        <member name="T:SpreadsheetUtilities.DependencyGraph.graphNode">
+            <summary>
+            Private class that represents a node.  Contains a name, a set of dependents,
+            and a set of dependees.
+            Contains mulitple methods for retreiving and updating the instance variables.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.graphNode.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Similar to the first constructor but constructs the dependent node
+            sets name to s, adds the t to dependees.
+            </summary>
+            <param name="s"></param>
+            <param name="t"></param>
+            <param name="x"></param>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.graphNode.addDependent(System.String)">
+            <summary>
+            Tests to see if a dependent was actually added
+            The depended is added as a side effect
+            if added, return true, else returns false.
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.graphNode.addDependee(System.String)">
+            <summary>
+            Returns true if an element is actually added to the set
+            Accounts for duplicates and returns false if s is already
+            found in the set.
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SpreadsheetUtilities.DependencyGraph.graphNode.getDependees">
+            <summary>
+            Protects from object allocation.  Returns the 
+            set.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

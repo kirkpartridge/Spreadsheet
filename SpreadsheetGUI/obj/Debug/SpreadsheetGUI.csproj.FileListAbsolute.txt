@@ -35,3 +35,6 @@ C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\SpreadsheetGUI\obj\Debug
 C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\SpreadsheetGUI\obj\Debug\SpreadsheetGUI.exe
 C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\SpreadsheetGUI\obj\Debug\SpreadsheetGUI.pdb
 C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\SpreadsheetGUI\bin\Debug\SpreadsheetPanel.dll
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Spreadsheet\SpreadsheetGUI\bin\Debug\SpreadsheetGUI.exe.config
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Spreadsheet\SpreadsheetGUI\obj\Debug\SpreadsheetGUI.exe
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Spreadsheet\SpreadsheetGUI\obj\Debug\SpreadsheetGUI.pdb

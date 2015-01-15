@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><spreedsheet version="15"><cell><name>A1</name><contents>5</contents></cell><cell><name>C1</name><contents>=A1*3</contents></cell><cell><name>C23</name><contents>=C1*3</contents></cell></spreedsheet>
