@@ -1,0 +1,6 @@
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Resources\bin\Release\Resources.dll.config
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Resources\bin\Release\Resources.dll
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Resources\bin\Release\Resources.pdb
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Resources\obj\Release\Resources.csprojResolveAssemblyReference.cache
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Resources\obj\Release\Resources.dll
+C:\Users\Jack\Documents\Visual Studio 2013\Projects\PS6\Resources\obj\Release\Resources.pdb
